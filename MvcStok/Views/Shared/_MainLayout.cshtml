@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stock Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-inverse">
+                <h4 style="color:azure;">Mvc Stok With MVC ASP.NET</h4>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/Kategori/Index/">Kategoriler</a></li>
+                <li><a href="/Urun/Index/">Ürünler</a></li>
+                <li><a href="/Musteri/Index/">Müşteriler</a></li>
+                <li><a href="/Satis/Index/">Satışlar</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    @*Burası LayOut*@
+    <div class="container">
+        @RenderBody()
+    </div>
+    <div class="container body-content">
+
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Project || Rami KOCO</p>
+        </footer>
+    </div>
+</body>
+</html>
+
